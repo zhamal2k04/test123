@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+
+    form {
+        width: 400px;
+        height: 400px;
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    input {
+        width: 250px;
+        border-radius: 8px;
+        border: 1px solid #112;
+        outline: none;
+        padding: 1rem;
+    }
+
+    button {
+        width: 250px;
+        padding: 1rem;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        background-color: lightgreen;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-family: monospace;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <section>
+        <form>
+            <h1>Type here your age</h1>
+            <input type="number" placeholder="Type here" id="age" required>
+            <button type="submit" id="btn" onclick="click()">Click me</button>
+        </form>
+        
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
